@@ -21,7 +21,8 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "eslint . --ext .ts",
-    "clean": "ets clean"
+    "clean": "ets clean",
+    "cert": "ts-node ./app/certManager.ts"
   },
   "dependencies": {
     "axios": "^0.21.4",
@@ -45,8 +46,10 @@
     "egg-mock": "^3.16.0",
     "eslint": "^6.7.2",
     "eslint-config-egg": "^8.0.0",
+    "node-easy-cert": "^1.3.3",
+    "ts-node": "^10.7.0",
     "tslib": "^1.9.0",
-    "typescript": "^3.0.0"
+    "typescript": "^3.9.10"
   },
   "engines": {
     "node": ">=8.9.0"
